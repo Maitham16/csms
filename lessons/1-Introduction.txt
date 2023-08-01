@@ -1,0 +1,75 @@
+What are Microservices?
+
+Microservices, or the microservices architectural style, is an approach to developing a 
+single application as a suite of small services, each running in its own process and 
+communicating with lightweight mechanisms, often an HTTP resource API. Each microservice 
+is built around a specific business capability, and you can use different technologies 
+for different microservices.
+
+Microservices in .NET
+
+.NET provides several tools and frameworks that make it easier to build microservices, 
+including:
+
+    ASP.NET Core: It's a cross-platform framework for building modern, cloud-based, and 
+    internet-connected applications. You can use it to build APIs for your microservices.
+
+    Docker: It is a containerization platform. You can use it to package your microservices 
+    into containers, which are self-sufficient units that include everything you need to run 
+    the service.
+
+    Kubernetes (K8s): An open-source platform designed to automate deploying, scaling, and 
+    operating application containers. With Kubernetes, you can manage a cluster of Docker 
+    containers.
+
+    gRPC: It's a modern, high-performance, open-source framework that can run in any 
+    environment. gRPC can be used to build efficient, high-performance communication 
+    between your microservices.
+
+    IdentityServer: It's a framework and a hostable component that allows implementing 
+    single sign-on and access control for modern web applications and APIs.
+
+Now, let's walk through a basic process for developing microservices with .NET.
+
+Steps to Develop Microservices with .NET
+
+    Define your microservices: Start by identifying the different components of your 
+    application that can be separated into individual services. Each of these should 
+    represent a distinct business capability.
+
+    Create your services with ASP.NET Core: For each microservice, create a new ASP.NET 
+    Core application. This application should include a RESTful API that exposes the 
+    functionality of the service.
+
+    Develop your business logic: Inside each microservice, write the code that implements 
+    the business logic of that service.
+
+    Implement data storage: Each microservice should have its own isolated database to 
+    ensure loose coupling. You can use any database technology that fits your needs.
+
+    Secure your services with IdentityServer: Use IdentityServer to authenticate and 
+    authorize the users of your microservices.
+
+    Dockerize your services: Package each microservice into a Docker container. This 
+    allows you to run and scale your services independently.
+
+    Deploy with Kubernetes: Finally, use Kubernetes to deploy your Docker containers. 
+    Kubernetes can manage your services, ensuring that they're always available and 
+    scaling them up or down as necessary.
+
+    Implementing Communication: You can use gRPC for high-performance communication 
+    between your services.
+
+Remember, there is no one-size-fits-all approach when it comes to microservices architecture. 
+Your design will depend on the specific requirements of your application and your team's 
+familiarity with different technologies.
+
+To get more hands-on knowledge, I recommend checking out the eShopOnContainers reference 
+application provided by Microsoft. It is a sample .NET Core application built using 
+microservices architecture, Docker containers, and several other technologies. 
+It will give you a solid understanding of how all these components fit together.
+
+Remember, as fun as it might be to dive right in, it's also important to understand 
+the implications of microservices architecture. This includes considering the 
+complexity of managing many different services, handling inter-service communication, 
+and implementing proper security measures.

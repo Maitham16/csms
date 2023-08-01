@@ -1,0 +1,14 @@
+1- First we built the scenario.
+2- We built the relationships between Microservices.
+3- We decided which Microservices need a database and what kind of database are we going to use.
+4- We specified the API endpoints for each Microservice (We may need to change them later).
+5- We specified the Request and Response for each endpoint as JSON.
+6- We specified the HTTP methods for each endpoint (as in RESTful API).
+7- We specified a Message Broker for each Microservice (RabbitMQ).
+8- We decide to use (OAuth 2.0 / OpenID Connect) for Authentication and Authorization.
+9- We decided to use for testing (Unit Testing / Integration Testing / End-to-End Testing)
+   and later we will decide which tools we are going to use.
+10- Deployment Strategy: We decided to use (Docker / Kubernetes) for containerization.
+                         We decided to use (CI/CD Pipelines) for Continuous Integration and 
+                         Continuous Delivery (Github).
+11- We will decide later which tools will be used for monitoring and logging.

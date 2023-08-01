@@ -1,0 +1,70 @@
+    Project Documentation
+
+    The first step should be to lay out a clear documentation detailing what each 
+    microservice does, how they interact, and what their APIs will look like. This 
+    will include:
+
+    a. Identify the Microservices: Determine what functionalities should be split into 
+    separate services. In the context of an eShop, we might have an inventory service, 
+    an order service, a user service, and so on.
+
+    b. Define the APIs: Define how each service will expose its functionalities. 
+    This will include the API endpoints and their inputs/outputs. ASP.NET Core, coupled 
+    with Swagger, can be great for this.
+
+    c. Define the Data Schema: Each service should have its own database. Define what data 
+    is stored where.
+
+    d. Define the Communication: Specify how the services will communicate with each other. 
+    This may include using HTTP/REST, gRPC, or a combination of both. You may also want to 
+    include some kind of message bus (like RabbitMQ or Azure Service Bus) for asynchronous 
+    communication.
+
+    e. Define the Authentication/Authorization Strategy: This is especially important in a 
+    distributed system like a microservices architecture. You might use IdentityServer, JWT, 
+    or another system.
+
+    Implementing the Microservices
+
+    Once the documentation is complete, we can start creating the microservices based on our 
+    design. The typical flow might look something like this:
+
+    a. Set Up the Development Environment: This includes your local machine and the broader 
+    development infrastructure. Visual Studio Code, Docker, and .NET Core SDK are just a 
+    few of the tools that will likely be needed.
+
+    b. Create the ASP.NET Core Projects: For each microservice, create a new ASP.NET Core 
+    project. Then implement the business logic and data access layers.
+
+    c. Implement the APIs: For each microservice, implement the APIs defined in your 
+    documentation. Test the APIs to ensure they're working correctly.
+
+    d. Dockerize the Services: For each microservice, create a Dockerfile that describes 
+    how to build a Docker image for that service. Then build and test the Docker images.
+
+    e. Implement the Communication: Set up the communication between your services. This 
+    might involve setting up a message bus, or implementing HTTP/gRPC communication.
+
+    Testing and Deployment
+
+    After all the microservices are complete, it's time to test and deploy them:
+
+    a. Set Up the Deployment Environment: This will probably involve setting up a Kubernetes 
+    cluster. This could be on a cloud provider or on-premise.
+
+    b. Deploy the Services: Deploy the Docker images for each service to your Kubernetes 
+    cluster. Then test to make sure everything works as expected.
+
+    c. Implement Continuous Integration/Continuous Deployment (CI/CD): Automate the testing 
+    and deployment of your services. This way, every time you make a change to the code, 
+    it gets tested and deployed automatically.
+
+    Monitor and Update
+
+    Once everything is up and running, it's important to keep an eye on your services to 
+    ensure they're running smoothly. Implement some form of logging and monitoring for your 
+    services. Also, be prepared to update your services as needed based on feedback and 
+    changing business requirements.
+
+This should give you a broad outline of how to approach this project. Of course, each of 
+these steps is a project in itself, and there's a lot to learn along the way!
