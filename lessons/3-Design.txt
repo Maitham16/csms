@@ -4,7 +4,8 @@
 4- We specified the API endpoints for each Microservice (We may need to change them later).
 5- We specified the Request and Response for each endpoint as JSON.
 6- We specified the HTTP methods for each endpoint (as in RESTful API).
-7- We specified a Message Broker for each Microservice (RabbitMQ).
+7- We specified a Message Broker for each Microservice (RabbitMQ) and Kubernetes for Microservices
+   Discovery and Load Balancing.
 8- We decide to use (OAuth 2.0 / OpenID Connect) for Authentication and Authorization.
 9- We decided to use for testing (Unit Testing / Integration Testing / End-to-End Testing)
    and later we will decide which tools we are going to use.
