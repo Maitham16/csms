@@ -41,3 +41,5 @@
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Mono.TextTemplating.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/System.CodeDom.dll
+/home/maith/Desktop/CSharpMS/UserService/obj/Debug/net7.0/UserService.RazorAssemblyInfo.cache
+/home/maith/Desktop/CSharpMS/UserService/obj/Debug/net7.0/UserService.RazorAssemblyInfo.cs

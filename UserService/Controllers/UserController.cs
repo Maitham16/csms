@@ -4,12 +4,15 @@
 using Microsoft.AspNetCore.Mvc;
 using UserService.Models;
 using UserService.Repositories;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UserService.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : Controller
     {
         private readonly IUserRepository _userRepository;
 
@@ -19,11 +22,11 @@ namespace UserService.Controllers
         }
 
         // GET: User
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
-        {
-            return Ok(await _userRepository.GetUsers());
-        }
+        // [HttpGet]
+        // public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        // {
+        //     return Ok(await _userRepository.GetUsers());
+        // }
 
         // GET: User/5
         [HttpGet("{id}")]
@@ -40,13 +43,13 @@ namespace UserService.Controllers
         }
 
         // POST: User/Register
-        [HttpPost("Register")]
-        public async Task<ActionResult<User>> AddUser(User user)
-        {
-            await _userRepository.AddUser(user);
+        // [HttpPost("api/Register")]
+        // public async Task<ActionResult<User>> AddUser(User user)
+        // {
+        //     await _userRepository.AddUser(user);
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
-        }
+        //     return CreatedAtAction("GetUser", new { id = user.Id }, user);
+        // }
 
         // PUT: User/Update/5
         [HttpPut("Update/{id}")]
@@ -74,5 +77,32 @@ namespace UserService.Controllers
             return Ok(user);
         }
 
+        // GET: User
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            var users = await _userRepository.GetUsers();
+            return View(users);
+        }
+
+        // GET: User/Register
+        [HttpGet("Register")]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        // POST: User/Register
+        [HttpPost("Register")]
+        [HttpPost]
+        public async Task<IActionResult> Register([FromBody] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                await _userRepository.AddUser(user);
+                return RedirectToAction("Index");
+            }
+            return View(user);
+        }
     }
 }
