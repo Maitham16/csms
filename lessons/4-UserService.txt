@@ -1,0 +1,26 @@
+- the microservice layout is:
+Model - Repository - Data - Controller - View
+
+Models:
+- User (contains the user data) (Id, FirstName, LastName, Email, Password, Address, City, Country, ZipCode, PhoneNumber, Role)
+
+Repositories:
+- UserRepository (contains the methods to interact with the database)
+- IUserRepository (contains the interface for the UserRepository)
+
+Data:
+- UserContext (contains the database context)
+
+Controllers:
+- UserController (contains the methods to interact with the views)
+                 (endpoints: Index(get all users), Register(get the register view), Register(post the register view),
+                    Login(get the login view), Login(post the login view), Logout(logout the user), Edit(get the edit view),
+                    Edit(post the edit view), Delete(delete the user))
+
+Views:
+- User:
+    -Index (contains the table with all the users)
+    -Register (contains the form to register a new user)
+    -Login (contains the form to login)
+    -Edit (contains the form to edit the user)
+    -Delete (a bottom to delete the user)

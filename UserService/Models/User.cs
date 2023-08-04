@@ -18,6 +18,10 @@ namespace UserService.Models
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Last name must be between 2 and 50 characters")]
         public string? LastName { get; set; }
 
+        [Required(ErrorMessage = "Birthdate is required")]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Birthdate must be between 2 and 50 characters")]
+        public string? Birthdate { get; set; }
+
         [Required(ErrorMessage = "Email is required")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Email must be between 2 and 50 characters")]
         public string? Email { get; set; }

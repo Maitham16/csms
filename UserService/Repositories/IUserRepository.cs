@@ -12,5 +12,7 @@ namespace UserService.Repositories
         Task<User> AddUser(User user);
         Task<User> UpdateUser(User user);
         Task<User?> DeleteUser(int id);
+        Task<User?> GetUserByEmail(string? email);
+
     }
 }

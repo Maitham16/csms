@@ -54,5 +54,16 @@ namespace UserService.Repositories
             return user;
         }
 
+        public async Task<User?> GetUserByEmail(string? email)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return null;
+            }
+
+            return user;
+        }
+
     }
 }

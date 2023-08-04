@@ -5,23 +5,34 @@
 <table class="table">
     <thead>
         <tr>
+            <th>ID</th>
             <th>Last Name</th>
             <th>Email</th>
-            <!-- Other properties -->
+
+            <th></th> <!-- Header for view button column -->
             <th></th> <!-- Header for delete button column -->
+            <th></th> <!-- Header for edit button column -->
         </tr>
     </thead>
     <tbody>
         @foreach (var user in Model)
         {
             <tr>
+                <td>@user.Id</td>
                 <td>@user.LastName</td>
                 <td>@user.Email</td>
-                <!-- Other properties -->
 
                 <!-- Delete button -->
                 <td>
                     <button data-id="@user.Id" class="btn btn-danger deleteBtn">Delete</button>
+                </td>
+                <!-- Edit button -->
+                <td>
+                    <button data-id="@user.Id" class="btn btn-primary editBtn">Edit</button>
+                </td>
+                <!-- View button -->
+                <td>
+                    <button data-id="@user.Id" class="btn btn-primary viewBtn">View</button>
                 </td>
             </tr>
         }
@@ -30,23 +41,32 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.deleteBtn').click(function() {
+    $(document).ready(function () {
+        $('.deleteBtn').click(function () {
             var userId = $(this).data('id');
             $.ajax({
                 url: '/User/Delete/' + userId,
                 type: 'DELETE',
-                success: function(result) {
+                success: function (result) {
                     // Handle success - perhaps remove the row from the DOM
                     console.log("User deleted successfully");
                     // reload the page
                     location.reload();
                 },
-                error: function(request,msg,error) {
+                error: function (request, msg, error) {
                     // Handle error
                     console.log(error);
                 }
             });
+        });
+
+        $('.editBtn').click(function () {
+            var userId = $(this).data('id');
+            window.location.href = '/User/Edit/' + userId;
+        });
+        $('.viewBtn').click(function () {
+            var userId = $(this).data('id');
+            window.location.href = '/User/' + userId;
         });
     });
 </script>

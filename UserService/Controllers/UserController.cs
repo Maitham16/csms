@@ -52,17 +52,17 @@ namespace UserService.Controllers
         // }
 
         // PUT: User/Update/5
-        [HttpPut("Update/{id}")]
-        public async Task<ActionResult<User>> UpdateUser(int id, User user)
-        {
-            if (id != user.Id)
-            {
-                return BadRequest();
-            }
-            await _userRepository.UpdateUser(user);
+        // [HttpPut("Update/{id}")]
+        // public async Task<ActionResult<User>> UpdateUser(int id, User user)
+        // {
+        //     if (id != user.Id)
+        //     {
+        //         return BadRequest();
+        //     }
+        //     await _userRepository.UpdateUser(user);
 
-            return NoContent();
-        }
+        //     return NoContent();
+        // }
 
         // DELETE: User/Delete/5
         [HttpDelete("Delete/{id}")]
@@ -94,7 +94,6 @@ namespace UserService.Controllers
 
         // POST: User/Register
         [HttpPost("Register")]
-        [HttpPost]
         public async Task<IActionResult> Register([FromBody] User user)
         {
             if (ModelState.IsValid)
@@ -103,6 +102,54 @@ namespace UserService.Controllers
                 return RedirectToAction("Index");
             }
             return View(user);
+        }
+
+        // GET: User/Edit/5
+        [HttpGet("Edit/{id}")]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var user = await _userRepository.GetUser(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
+        }
+
+        // POST: User/Edit/5
+        [HttpPost("Edit/{id}")]
+        public async Task<IActionResult> Edit(int id, [FromForm] User updatedUser)
+        {
+            if (id != updatedUser.Id)
+            {
+                return BadRequest();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    await _userRepository.UpdateUser(updatedUser);
+                }
+                catch
+                {
+                    var user = await _userRepository.GetUser(id);
+                    if (user == null)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(updatedUser);
         }
     }
 }
