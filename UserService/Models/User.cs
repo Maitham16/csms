@@ -27,7 +27,7 @@ namespace UserService.Models
         public string? Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [StringLength(50, MinimumLength = 2, ErrorMessage = "Password must be between 2 and 50 characters")]
+        [StringLength(500, MinimumLength = 2, ErrorMessage = "Password must be between 2 and 50 characters")]
         public string? Password { get; set; }
 
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Phone number must be between 2 and 50 characters")]

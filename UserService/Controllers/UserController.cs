@@ -139,19 +139,14 @@ namespace UserService.Controllers
             {
                 try
                 {
+                    var hasher = new PasswordHasher<User>();
+                    updatedUser.Password = hasher.HashPassword(updatedUser, updatedUser.Password);
                     await _userRepository.UpdateUser(updatedUser);
                 }
                 catch
                 {
-                    var user = await _userRepository.GetUser(id);
-                    if (user == null)
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    // Handle the exception if needed
+                    return NotFound();
                 }
 
                 return RedirectToAction(nameof(Index));
