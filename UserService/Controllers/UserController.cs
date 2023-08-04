@@ -7,6 +7,7 @@ using UserService.Repositories;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace UserService.Controllers
 {
@@ -98,6 +99,13 @@ namespace UserService.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (user.Password == null)
+                {
+                    ModelState.AddModelError(nameof(user.Password), "Password cannot be null");
+                    return BadRequest(ModelState);
+                }
+                var hasher = new PasswordHasher<User>();
+                user.Password = hasher.HashPassword(user, user.Password);
                 await _userRepository.AddUser(user);
                 return RedirectToAction("Index");
             }
