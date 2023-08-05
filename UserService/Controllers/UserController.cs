@@ -31,6 +31,7 @@ public class UserController : Controller
     [HttpPost("Register")]
     public async Task<IActionResult> Register(RegisterModel model)
     {
+        _logger.LogInformation("Register method called");
         if (ModelState.IsValid)
         {
             var user = await _userService.RegisterUser(
@@ -49,14 +50,18 @@ public class UserController : Controller
 
             if (user != null)
             {
-                return RedirectToAction("Index");
+                _logger.LogInformation("Model received: {Model}", model);
+                return Ok(new { Message = "Registration successful.", User = user });
             }
 
-            ModelState.AddModelError("", "Invalid registration attempt.");
+            _logger.LogInformation("User returned null for email: {Email}", model.Email);
+            return BadRequest(new { Message = "Invalid registration attempt. User returned null for email." });  // return bad request status
         }
 
-        return View(model);
+        _logger.LogWarning("Model state is invalid. Errors: {ModelStateErrors}", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
+        return BadRequest(new { Message = "Invalid registration attempt. Model state is invalid." });  // return bad request status
     }
+
 
     [AllowAnonymous]
     [HttpGet("Login")]

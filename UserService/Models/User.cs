@@ -45,4 +45,3 @@ namespace UserService.Models
         public string? Role { get; set; }
     }
 }
-
