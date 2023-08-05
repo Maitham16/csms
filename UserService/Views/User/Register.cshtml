@@ -1,8 +1,13 @@
-@model UserService.Models.User
+@model UserService.Models.RegisterModel
 
 <h2>Register</h2>
 
 <form asp-action="Register" asp-controller="User" method="post">
+    <div class="form-group">
+        <label for="UserName">*Username:</label>
+        <input asp-for="UserName" class="form-control" id="UserName" name="UserName" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
     <div class="form-group">
         <label for="FirstName">*First Name:</label>
         <input asp-for="FirstName" class="form-control" id="FirstName" name="FirstName" />
@@ -13,7 +18,8 @@
     </div>
     <div class="form-group">
         <label for="Birthdate">*Birthdate:</label>
-        <input asp-for="Birthdate" class="form-control" id="Birthdate" name="Birthdate" />
+        <input asp-for="Birthdate" type="date" class="form-control" id="Birthdate" name="Birthdate" />
+        <span asp-validation-for="Birthdate" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label for="Email">*Email:</label>
@@ -21,7 +27,14 @@
     </div>
     <div class="form-group">
         <label for="Password">*Password:</label>
-        <input asp-for="Password" class="form-control" id="Password" name="Password" />
+        <input asp-for="Password" type="password" class="form-control" id="Password" name="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ConfirmPassword">*Confirm Password:</label>
+        <input asp-for="ConfirmPassword" type="password" class="form-control" id="ConfirmPassword"
+            name="ConfirmPassword" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label for="Phone">Phone:</label>
@@ -53,7 +66,11 @@
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(function () {
         $("form").on("submit", function (event) {
@@ -84,4 +101,4 @@
             });
         });
     });
-</script>
+</script> *@

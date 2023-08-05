@@ -1,9 +1,13 @@
-@model UserService.Models.User
+@model UserService.Models.UpdateModel
 
 <h2>Edit User</h2>
 
 <form asp-action="Edit" asp-controller="User" method="post">
     <input asp-for="Id" type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="UserName">*Username:</label>
+        <input asp-for="UserName" class="form-control" id="UserName" name="UserName" value="@Model.UserName" />
+    </div>
     <div class="form-group">
         <label for="FirstName">*First Name:</label>
         <input asp-for="FirstName" class="form-control" id="FirstName" name="FirstName" value="@Model.FirstName" />
@@ -14,7 +18,9 @@
     </div>
     <div class="form-group">
         <label for="Birthdate">*Birthdate:</label>
-        <input asp-for="Birthdate" class="form-control" id="Birthdate" name="Birthdate" value="@Model.Birthdate" />
+        <input asp-for="Birthdate" type="date" class="form-control" id="Birthdate" name="Birthdate"
+            value="@Model.Birthdate?.ToString("yyyy-MM-dd")" />
+        <span asp-validation-for="Birthdate" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label for="Email">*Email:</label>
@@ -22,7 +28,14 @@
     </div>
     <div class="form-group">
         <label for="Password">*Password:</label>
-        <input asp-for="Password" class="form-control" id="Password" name="Password" value="@Model.Password" />
+        <input asp-for="Password" type="password" class="form-control" id="Password" name="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ConfirmPassword">*Confirm Password:</label>
+        <input asp-for="ConfirmPassword" type="password" class="form-control" id="ConfirmPassword"
+            name="ConfirmPassword" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label for="Phone">Phone:</label>
@@ -47,9 +60,9 @@
     </div>
     <div class="form-group">
         <label for="Role">Role:</label>
-        <select asp-for="Role" class="form-control" id="Role" name="Role" value="@Model.Role">
-            <option value="Admin">Admin</option>
-            <option value="User">User</option>
+        <select asp-for="Role" class="form-control" id="Role" name="Role">
+            <option value="Admin" @(Model.Role == "Admin" ? "selected" : "")>Admin</option>
+            <option value="User" @(Model.Role == "User" ? "selected" : "")>User</option>
         </select>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>

@@ -5085,7 +5085,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onfocus",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onfocus' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+        "Documentation": "Sets the '@onfocus' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5127,7 +5127,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onfocus",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.FocusEventArgs>",
-            "Documentation": "Sets the '@onfocus' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+            "Documentation": "Sets the '@onfocus' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5168,7 +5168,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onblur",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onblur' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+        "Documentation": "Sets the '@onblur' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5210,7 +5210,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onblur",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.FocusEventArgs>",
-            "Documentation": "Sets the '@onblur' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+            "Documentation": "Sets the '@onblur' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5251,7 +5251,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onfocusin",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onfocusin' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+        "Documentation": "Sets the '@onfocusin' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5293,7 +5293,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onfocusin",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.FocusEventArgs>",
-            "Documentation": "Sets the '@onfocusin' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+            "Documentation": "Sets the '@onfocusin' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5334,7 +5334,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onfocusout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onfocusout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+        "Documentation": "Sets the '@onfocusout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5376,7 +5376,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onfocusout",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.FocusEventArgs>",
-            "Documentation": "Sets the '@onfocusout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
+            "Documentation": "Sets the '@onfocusout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.FocusEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5417,7 +5417,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmouseover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmouseover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmouseover' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5459,7 +5459,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmouseover",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmouseover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmouseover' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5500,7 +5500,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmouseout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmouseout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmouseout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5542,7 +5542,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmouseout",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmouseout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmouseout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5583,7 +5583,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmouseleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmouseleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmouseleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5625,7 +5625,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmouseleave",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmouseleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmouseleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5666,7 +5666,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmouseenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmouseenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmouseenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5708,7 +5708,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmouseenter",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmouseenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmouseenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5749,7 +5749,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmousemove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmousemove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmousemove' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5791,7 +5791,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmousemove",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmousemove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmousemove' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5832,7 +5832,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmousedown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmousedown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmousedown' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5874,7 +5874,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmousedown",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmousedown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmousedown' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5915,7 +5915,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmouseup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmouseup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onmouseup' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -5957,7 +5957,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmouseup",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onmouseup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onmouseup' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -5998,7 +5998,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onclick' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@onclick' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6040,7 +6040,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onclick",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@onclick' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@onclick' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6081,7 +6081,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondblclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondblclick' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@ondblclick' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6123,7 +6123,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondblclick",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@ondblclick' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@ondblclick' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6164,7 +6164,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onwheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onwheel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
+        "Documentation": "Sets the '@onwheel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6206,7 +6206,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onwheel",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.WheelEventArgs>",
-            "Documentation": "Sets the '@onwheel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
+            "Documentation": "Sets the '@onwheel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6247,7 +6247,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onmousewheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onmousewheel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
+        "Documentation": "Sets the '@onmousewheel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6289,7 +6289,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onmousewheel",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.WheelEventArgs>",
-            "Documentation": "Sets the '@onmousewheel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
+            "Documentation": "Sets the '@onmousewheel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.WheelEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6330,7 +6330,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oncontextmenu",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oncontextmenu' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+        "Documentation": "Sets the '@oncontextmenu' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6372,7 +6372,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oncontextmenu",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs>",
-            "Documentation": "Sets the '@oncontextmenu' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
+            "Documentation": "Sets the '@oncontextmenu' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.MouseEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6413,7 +6413,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondrag",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondrag' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondrag' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6455,7 +6455,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondrag",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondrag' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondrag' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6496,7 +6496,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondragend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondragend' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondragend' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6538,7 +6538,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondragend",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondragend' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondragend' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6579,7 +6579,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondragenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondragenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondragenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6621,7 +6621,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondragenter",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondragenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondragenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6662,7 +6662,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondragleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondragleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondragleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6704,7 +6704,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondragleave",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondragleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondragleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6745,7 +6745,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondragover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondragover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondragover' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6787,7 +6787,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondragover",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondragover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondragover' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6828,7 +6828,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondragstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondragstart' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondragstart' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6870,7 +6870,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondragstart",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondragstart' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondragstart' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6911,7 +6911,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondrop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondrop' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+        "Documentation": "Sets the '@ondrop' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -6953,7 +6953,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondrop",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.DragEventArgs>",
-            "Documentation": "Sets the '@ondrop' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
+            "Documentation": "Sets the '@ondrop' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.DragEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -6994,7 +6994,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onkeydown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onkeydown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
+        "Documentation": "Sets the '@onkeydown' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7036,7 +7036,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onkeydown",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>",
-            "Documentation": "Sets the '@onkeydown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
+            "Documentation": "Sets the '@onkeydown' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7077,7 +7077,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onkeyup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onkeyup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
+        "Documentation": "Sets the '@onkeyup' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7119,7 +7119,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onkeyup",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>",
-            "Documentation": "Sets the '@onkeyup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
+            "Documentation": "Sets the '@onkeyup' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7160,7 +7160,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onkeypress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onkeypress' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
+        "Documentation": "Sets the '@onkeypress' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7202,7 +7202,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onkeypress",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>",
-            "Documentation": "Sets the '@onkeypress' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
+            "Documentation": "Sets the '@onkeypress' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.KeyboardEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7243,7 +7243,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onchange' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
+        "Documentation": "Sets the '@onchange' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7285,7 +7285,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onchange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs>",
-            "Documentation": "Sets the '@onchange' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
+            "Documentation": "Sets the '@onchange' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7326,7 +7326,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oninput",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oninput' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
+        "Documentation": "Sets the '@oninput' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7368,7 +7368,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oninput",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs>",
-            "Documentation": "Sets the '@oninput' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
+            "Documentation": "Sets the '@oninput' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.ChangeEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7409,7 +7409,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oninvalid",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oninvalid' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@oninvalid' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7451,7 +7451,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oninvalid",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@oninvalid' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@oninvalid' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7492,7 +7492,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onreset",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onreset' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onreset' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7534,7 +7534,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onreset",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onreset' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onreset' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7575,7 +7575,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onselect",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onselect' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onselect' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7617,7 +7617,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onselect",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onselect' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onselect' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7658,7 +7658,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onselectstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onselectstart' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onselectstart' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7700,7 +7700,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onselectstart",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onselectstart' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onselectstart' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7741,7 +7741,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onselectionchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onselectionchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onselectionchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7783,7 +7783,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onselectionchange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onselectionchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onselectionchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7824,7 +7824,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onsubmit",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onsubmit' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onsubmit' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7866,7 +7866,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onsubmit",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onsubmit' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onsubmit' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7907,7 +7907,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onbeforecopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onbeforecopy' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onbeforecopy' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -7949,7 +7949,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onbeforecopy",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onbeforecopy' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onbeforecopy' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -7990,7 +7990,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onbeforecut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onbeforecut' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onbeforecut' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8032,7 +8032,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onbeforecut",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onbeforecut' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onbeforecut' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8073,7 +8073,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onbeforepaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onbeforepaste' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onbeforepaste' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8115,7 +8115,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onbeforepaste",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onbeforepaste' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onbeforepaste' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8156,7 +8156,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oncopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oncopy' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
+        "Documentation": "Sets the '@oncopy' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8198,7 +8198,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oncopy",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>",
-            "Documentation": "Sets the '@oncopy' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
+            "Documentation": "Sets the '@oncopy' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8239,7 +8239,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oncut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oncut' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
+        "Documentation": "Sets the '@oncut' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8281,7 +8281,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oncut",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>",
-            "Documentation": "Sets the '@oncut' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
+            "Documentation": "Sets the '@oncut' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8322,7 +8322,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpaste' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
+        "Documentation": "Sets the '@onpaste' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8364,7 +8364,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpaste",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>",
-            "Documentation": "Sets the '@onpaste' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
+            "Documentation": "Sets the '@onpaste' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ClipboardEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8405,7 +8405,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontouchcancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontouchcancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+        "Documentation": "Sets the '@ontouchcancel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8447,7 +8447,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontouchcancel",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.TouchEventArgs>",
-            "Documentation": "Sets the '@ontouchcancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+            "Documentation": "Sets the '@ontouchcancel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8488,7 +8488,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontouchend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontouchend' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+        "Documentation": "Sets the '@ontouchend' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8530,7 +8530,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontouchend",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.TouchEventArgs>",
-            "Documentation": "Sets the '@ontouchend' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+            "Documentation": "Sets the '@ontouchend' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8571,7 +8571,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontouchmove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontouchmove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+        "Documentation": "Sets the '@ontouchmove' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8613,7 +8613,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontouchmove",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.TouchEventArgs>",
-            "Documentation": "Sets the '@ontouchmove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+            "Documentation": "Sets the '@ontouchmove' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8654,7 +8654,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontouchstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontouchstart' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+        "Documentation": "Sets the '@ontouchstart' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8696,7 +8696,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontouchstart",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.TouchEventArgs>",
-            "Documentation": "Sets the '@ontouchstart' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+            "Documentation": "Sets the '@ontouchstart' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8737,7 +8737,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontouchenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontouchenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+        "Documentation": "Sets the '@ontouchenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8779,7 +8779,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontouchenter",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.TouchEventArgs>",
-            "Documentation": "Sets the '@ontouchenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+            "Documentation": "Sets the '@ontouchenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8820,7 +8820,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontouchleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontouchleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+        "Documentation": "Sets the '@ontouchleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8862,7 +8862,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontouchleave",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.TouchEventArgs>",
-            "Documentation": "Sets the '@ontouchleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
+            "Documentation": "Sets the '@ontouchleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.TouchEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8903,7 +8903,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ongotpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ongotpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@ongotpointercapture' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -8945,7 +8945,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ongotpointercapture",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@ongotpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@ongotpointercapture' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -8986,7 +8986,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onlostpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onlostpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onlostpointercapture' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9028,7 +9028,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onlostpointercapture",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onlostpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onlostpointercapture' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9069,7 +9069,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointercancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointercancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointercancel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9111,7 +9111,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointercancel",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointercancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointercancel' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9152,7 +9152,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerdown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerdown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointerdown' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9194,7 +9194,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerdown",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointerdown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointerdown' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9235,7 +9235,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointerenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9277,7 +9277,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerenter",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointerenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointerenter' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9318,7 +9318,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointerleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9360,7 +9360,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerleave",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointerleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointerleave' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9401,7 +9401,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointermove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointermove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointermove' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9443,7 +9443,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointermove",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointermove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointermove' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9484,7 +9484,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointerout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9526,7 +9526,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerout",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointerout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointerout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9567,7 +9567,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointerover' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9609,7 +9609,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerover",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointerover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointerover' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9650,7 +9650,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+        "Documentation": "Sets the '@onpointerup' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9692,7 +9692,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerup",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.PointerEventArgs>",
-            "Documentation": "Sets the '@onpointerup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
+            "Documentation": "Sets the '@onpointerup' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.PointerEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9733,7 +9733,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oncanplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oncanplay' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@oncanplay' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9775,7 +9775,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oncanplay",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@oncanplay' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@oncanplay' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9816,7 +9816,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oncanplaythrough",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oncanplaythrough' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@oncanplaythrough' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9858,7 +9858,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oncanplaythrough",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@oncanplaythrough' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@oncanplaythrough' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9899,7 +9899,7 @@
         "Kind": "Components.EventHandler",
         "Name": "oncuechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@oncuechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@oncuechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -9941,7 +9941,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@oncuechange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@oncuechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@oncuechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -9982,7 +9982,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondurationchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondurationchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@ondurationchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10024,7 +10024,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondurationchange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@ondurationchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@ondurationchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10065,7 +10065,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onemptied",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onemptied' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onemptied' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10107,7 +10107,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onemptied",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onemptied' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onemptied' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10148,7 +10148,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpause",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpause' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onpause' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10190,7 +10190,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpause",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onpause' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onpause' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10231,7 +10231,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onplay' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onplay' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10273,7 +10273,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onplay",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onplay' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onplay' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10314,7 +10314,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onplaying",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onplaying' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onplaying' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10356,7 +10356,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onplaying",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onplaying' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onplaying' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10397,7 +10397,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onratechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onratechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onratechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10439,7 +10439,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onratechange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onratechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onratechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10480,7 +10480,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onseeked",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onseeked' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onseeked' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10522,7 +10522,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onseeked",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onseeked' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onseeked' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10563,7 +10563,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onseeking",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onseeking' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onseeking' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10605,7 +10605,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onseeking",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onseeking' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onseeking' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10646,7 +10646,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onstalled",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onstalled' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onstalled' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10688,7 +10688,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onstalled",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onstalled' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onstalled' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10729,7 +10729,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onstop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onstop' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onstop' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10771,7 +10771,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onstop",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onstop' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onstop' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10812,7 +10812,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onsuspend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onsuspend' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onsuspend' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10854,7 +10854,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onsuspend",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onsuspend' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onsuspend' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10895,7 +10895,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontimeupdate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontimeupdate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@ontimeupdate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -10937,7 +10937,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontimeupdate",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@ontimeupdate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@ontimeupdate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -10978,7 +10978,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onvolumechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onvolumechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onvolumechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11020,7 +11020,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onvolumechange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onvolumechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onvolumechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11061,7 +11061,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onwaiting",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onwaiting' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onwaiting' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11103,7 +11103,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onwaiting",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onwaiting' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onwaiting' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11144,7 +11144,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onloadstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onloadstart' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+        "Documentation": "Sets the '@onloadstart' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11186,7 +11186,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onloadstart",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ProgressEventArgs>",
-            "Documentation": "Sets the '@onloadstart' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+            "Documentation": "Sets the '@onloadstart' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11227,7 +11227,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontimeout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontimeout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+        "Documentation": "Sets the '@ontimeout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11269,7 +11269,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontimeout",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ProgressEventArgs>",
-            "Documentation": "Sets the '@ontimeout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+            "Documentation": "Sets the '@ontimeout' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11310,7 +11310,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onabort",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onabort' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+        "Documentation": "Sets the '@onabort' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11352,7 +11352,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onabort",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ProgressEventArgs>",
-            "Documentation": "Sets the '@onabort' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+            "Documentation": "Sets the '@onabort' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11393,7 +11393,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onload",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onload' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+        "Documentation": "Sets the '@onload' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11435,7 +11435,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onload",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ProgressEventArgs>",
-            "Documentation": "Sets the '@onload' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+            "Documentation": "Sets the '@onload' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11476,7 +11476,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onloadend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onloadend' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+        "Documentation": "Sets the '@onloadend' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11518,7 +11518,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onloadend",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ProgressEventArgs>",
-            "Documentation": "Sets the '@onloadend' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+            "Documentation": "Sets the '@onloadend' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11559,7 +11559,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onprogress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onprogress' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+        "Documentation": "Sets the '@onprogress' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11601,7 +11601,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onprogress",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ProgressEventArgs>",
-            "Documentation": "Sets the '@onprogress' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
+            "Documentation": "Sets the '@onprogress' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ProgressEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11642,7 +11642,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onerror' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ErrorEventArgs'.",
+        "Documentation": "Sets the '@onerror' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ErrorEventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11684,7 +11684,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onerror",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Web.ErrorEventArgs>",
-            "Documentation": "Sets the '@onerror' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ErrorEventArgs'.",
+            "Documentation": "Sets the '@onerror' attribute to the provided or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.Web.ErrorEventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11725,7 +11725,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11767,7 +11767,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onactivate",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11808,7 +11808,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onbeforeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onbeforeactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onbeforeactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11850,7 +11850,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onbeforeactivate",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onbeforeactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onbeforeactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11891,7 +11891,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onbeforedeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onbeforedeactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onbeforedeactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -11933,7 +11933,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onbeforedeactivate",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onbeforedeactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onbeforedeactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -11974,7 +11974,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ondeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ondeactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@ondeactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12016,7 +12016,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ondeactivate",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@ondeactivate' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@ondeactivate' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12057,7 +12057,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onended",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onended' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onended' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12099,7 +12099,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onended",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onended' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onended' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12140,7 +12140,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onfullscreenchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onfullscreenchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12182,7 +12182,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onfullscreenchange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onfullscreenchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onfullscreenchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12223,7 +12223,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onfullscreenerror' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onfullscreenerror' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12265,7 +12265,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onfullscreenerror",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onfullscreenerror' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onfullscreenerror' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12306,7 +12306,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onloadeddata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onloadeddata' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onloadeddata' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12348,7 +12348,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onloadeddata",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onloadeddata' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onloadeddata' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12389,7 +12389,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onloadedmetadata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onloadedmetadata' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onloadedmetadata' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12431,7 +12431,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onloadedmetadata",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onloadedmetadata' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onloadedmetadata' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12472,7 +12472,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerlockchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onpointerlockchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12514,7 +12514,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerlockchange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onpointerlockchange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onpointerlockchange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12555,7 +12555,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onpointerlockerror' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onpointerlockerror' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12597,7 +12597,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onpointerlockerror",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onpointerlockerror' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onpointerlockerror' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12638,7 +12638,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onreadystatechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onreadystatechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onreadystatechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12680,7 +12680,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onreadystatechange",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onreadystatechange' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onreadystatechange' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12721,7 +12721,7 @@
         "Kind": "Components.EventHandler",
         "Name": "onscroll",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@onscroll' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@onscroll' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12763,7 +12763,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@onscroll",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@onscroll' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@onscroll' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -12804,7 +12804,7 @@
         "Kind": "Components.EventHandler",
         "Name": "ontoggle",
         "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the '@ontoggle' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+        "Documentation": "Sets the '@ontoggle' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -12846,7 +12846,7 @@
             "Kind": "Components.EventHandler",
             "Name": "@ontoggle",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.EventArgs>",
-            "Documentation": "Sets the '@ontoggle' attribute to the provided string or delegate value. A delegate value should be of type 'System.EventArgs'.",
+            "Documentation": "Sets the '@ontoggle' attribute to the provided or delegate value. A delegate value should be of type 'System.EventArgs'.",
             "Metadata": {
               "Components.IsWeaklyTyped": "True",
               "Common.DirectiveAttribute": "True",
@@ -14363,7 +14363,7 @@
             "Kind": "ITagHelper",
             "Name": "asp-append-version",
             "TypeName": "System.Boolean",
-            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper.AppendVersion\">\n            <summary>\n            Value indicating if file version should be appended to the src urls.\n            </summary>\n            <remarks>\n            If <c>true</c> then a query string \"v\" with the encoded content of the file is added.\n            </remarks>\n        </member>",
+            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper.AppendVersion\">\n            <summary>\n            Value indicating if file version should be appended to the src urls.\n            </summary>\n            <remarks>\n            If <c>true</c> then a query \"v\" with the encoded content of the file is added.\n            </remarks>\n        </member>",
             "Metadata": {
               "Common.PropertyName": "AppendVersion"
             }
@@ -14408,7 +14408,7 @@
             "Kind": "ITagHelper",
             "Name": "asp-format",
             "TypeName": "System.String",
-            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\">\n            <summary>\n            The format string (see <see href=\"https://msdn.microsoft.com/en-us/library/txafckwd.aspx\" />) used to format the\n            <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For\" /> result. Sets the generated \"value\" attribute to that formatted string.\n            </summary>\n            <remarks>\n            Not used if the provided (see <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.InputTypeName\" />) or calculated \"type\" attribute value is\n            <c>checkbox</c>, <c>password</c>, or <c>radio</c>. That is, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\" /> is used when calling\n            <see cref=\"M:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator.GenerateTextBox(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.String,System.Object,System.String,System.Object)\" />.\n            </remarks>\n        </member>",
+            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\">\n            <summary>\n            The format (see <see href=\"https://msdn.microsoft.com/en-us/library/txafckwd.aspx\" />) used to format the\n            <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For\" /> result. Sets the generated \"value\" attribute to that formatted string.\n            </summary>\n            <remarks>\n            Not used if the provided (see <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.InputTypeName\" />) or calculated \"type\" attribute value is\n            <c>checkbox</c>, <c>password</c>, or <c>radio</c>. That is, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\" /> is used when calling\n            <see cref=\"M:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator.GenerateTextBox(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.String,System.Object,System.String,System.Object)\" />.\n            </remarks>\n        </member>",
             "Metadata": {
               "Common.PropertyName": "Format"
             }
@@ -14623,7 +14623,7 @@
             "Kind": "ITagHelper",
             "Name": "asp-append-version",
             "TypeName": "System.Boolean?",
-            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.AppendVersion\">\n            <summary>\n            Value indicating if file version should be appended to the href urls.\n            </summary>\n            <remarks>\n            If <c>true</c> then a query string \"v\" with the encoded content of the file is added.\n            </remarks>\n        </member>",
+            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.AppendVersion\">\n            <summary>\n            Value indicating if file version should be appended to the href urls.\n            </summary>\n            <remarks>\n            If <c>true</c> then a query \"v\" with the encoded content of the file is added.\n            </remarks>\n        </member>",
             "Metadata": {
               "Common.PropertyName": "AppendVersion"
             }
@@ -14940,7 +14940,7 @@
             "Kind": "ITagHelper",
             "Name": "asp-append-version",
             "TypeName": "System.Boolean?",
-            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper.AppendVersion\">\n            <summary>\n            Value indicating if file version should be appended to src urls.\n            </summary>\n            <remarks>\n            A query string \"v\" with the encoded content of the file is added.\n            </remarks>\n        </member>",
+            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper.AppendVersion\">\n            <summary>\n            Value indicating if file version should be appended to src urls.\n            </summary>\n            <remarks>\n            A query \"v\" with the encoded content of the file is added.\n            </remarks>\n        </member>",
             "Metadata": {
               "Common.PropertyName": "AppendVersion"
             }
@@ -15193,7 +15193,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the corresponding bind attribute. For example: <code>@bind-value:format=\"...\"</code> will apply a format string to the value specified in <code>@bind-value=\"...\"</code>. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the corresponding bind attribute. For example: <code>@bind-value:format=\"...\"</code> will apply a format to the value specified in <code>@bind-value=\"...\"</code>. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format"
                 }
@@ -15303,7 +15303,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -15355,7 +15355,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -15425,7 +15425,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -15477,7 +15477,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -15557,7 +15557,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_checked"
                 }
@@ -15609,7 +15609,7 @@
             "Kind": "Components.Bind",
             "Name": "format-checked",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_checked"
             }
@@ -15690,7 +15690,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -15742,7 +15742,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -15823,7 +15823,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -15875,7 +15875,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -15956,7 +15956,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16008,7 +16008,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16089,7 +16089,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16141,7 +16141,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16222,7 +16222,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16274,7 +16274,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16355,7 +16355,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16407,7 +16407,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16488,7 +16488,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16540,7 +16540,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16621,7 +16621,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16673,7 +16673,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16754,7 +16754,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16806,7 +16806,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -16887,7 +16887,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -16939,7 +16939,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -17020,7 +17020,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -17072,7 +17072,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind-value' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -17143,7 +17143,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -17195,7 +17195,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }
@@ -17265,7 +17265,7 @@
               {
                 "Name": "format",
                 "TypeName": "System.String",
-                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+                "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
                 "Metadata": {
                   "Common.PropertyName": "Format_value"
                 }
@@ -17317,7 +17317,7 @@
             "Kind": "Components.Bind",
             "Name": "format-value",
             "TypeName": "System.String",
-            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format string can currently only be used with expressions of type <code>DateTime</code>.",
+            "Documentation": "Specifies a format to convert the value specified by the '@bind' attribute. The format can currently only be used with expressions of type <code>DateTime</code>.",
             "Metadata": {
               "Common.PropertyName": "Format_value"
             }

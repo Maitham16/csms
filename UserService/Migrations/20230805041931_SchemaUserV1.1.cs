@@ -5,7 +5,7 @@
 namespace UserService.Migrations
 {
     /// <inheritdoc />
-    public partial class SchemaUserService : Migration
+    public partial class SchemaUserV11 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
