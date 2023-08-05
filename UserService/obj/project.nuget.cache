@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FMAz/BoraNUmYT2AVDC3EPdOy5ZHSsG3VA/ujHOtVE+wZUqufoSzY1N1oNKAhnhZiq679ErVE+eNEQ2aL510Lw==",
+  "dgSpecHash": "Hi9JcBgb7+mT2Aa8AJiEa8OfX2mfHNcZxdAq44jD0byRClIoHH8OpFsiRXytn5qVTmc0k9L2MFxtTGIdAtZSCw==",
   "success": true,
-  "projectFilePath": "/home/maith/Desktop/CSharpMS/UserService/UserService.csproj",
+  "projectFilePath": "/home/maith/Desktop/UserService/UserService.csproj",
   "expectedPackageFiles": [
     "/home/maith/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/maith/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

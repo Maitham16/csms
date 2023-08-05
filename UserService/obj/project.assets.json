@@ -2853,7 +2853,6 @@
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.9",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
-      "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
       "Microsoft.IdentityModel.Tokens >= 6.32.1",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
@@ -2866,11 +2865,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/maith/Desktop/CSharpMS/UserService/UserService.csproj",
+      "projectUniqueName": "/home/maith/Desktop/UserService/UserService.csproj",
       "projectName": "UserService",
-      "projectPath": "/home/maith/Desktop/CSharpMS/UserService/UserService.csproj",
+      "projectPath": "/home/maith/Desktop/UserService/UserService.csproj",
       "packagesPath": "/home/maith/.nuget/packages/",
-      "outputPath": "/home/maith/Desktop/CSharpMS/UserService/obj/",
+      "outputPath": "/home/maith/Desktop/UserService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/maith/.nuget/NuGet/NuGet.Config"
@@ -2907,10 +2906,6 @@
             "version": "[7.0.9, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
-            "target": "Package",
-            "version": "[7.0.9, )"
-          },
-          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.9, )"
           },

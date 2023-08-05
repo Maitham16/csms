@@ -11,7 +11,7 @@ using UserService.Data;
 namespace UserService.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20230805041907_SchemaUserV1.0")]
+    [Migration("20230805220908_SchemaUserV1.0")]
     partial class SchemaUserV10
     {
         /// <inheritdoc />
@@ -212,11 +212,6 @@ namespace UserService.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("varchar(256)");
 
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("longtext");
 
@@ -247,6 +242,9 @@ namespace UserService.Migrations
                         .HasColumnType("varchar(10)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");

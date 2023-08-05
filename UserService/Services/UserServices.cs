@@ -9,10 +9,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UserService.Data;
 using UserService.Models;
+using UserService.Repositories;
 
 namespace UserService.Services
 {
-    public class UserServices : IUserServices
+    public class UserServices : UserRepository
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
@@ -23,25 +24,9 @@ namespace UserService.Services
             _signInManager = signInManager;
         }
 
-        public async Task<User> RegisterUser(string Username, string FirstName, string LastName, DateTime Birthdate, string Email, string Password, string PhoneNumber, string Address, string City, string ZipCode, string Country, string Role)
+        public async Task<User> RegisterUser(User user, string password)
         {
-            var user = new User
-            {
-                UserName = Username,
-                FirstName = FirstName,
-                LastName = LastName,
-                Birthdate = Birthdate,
-                Email = Email,
-                Password = Password,
-                PhoneNumber = PhoneNumber,
-                Address = Address,
-                City = City,
-                ZipCode = ZipCode,
-                Country = Country,
-                Role = Role
-            };
-
-            var result = await _userManager.CreateAsync(user, Password);
+            var result = await _userManager.CreateAsync(user, password);
 
             if (result.Succeeded)
             {
@@ -80,19 +65,18 @@ namespace UserService.Services
             return users;
         }
 
-        public async Task<User> UpdateUser(UpdateModel userToUpdate)
+        public async Task<User> UpdateUser(User userToUpdate)
         {
             if (userToUpdate == null)
             {
                 throw new Exception("User update failed");
             }
-            var user = await _userManager.FindByIdAsync(userToUpdate.Id!);
+            var user = await _userManager.FindByIdAsync(userToUpdate.Id);
 
             if (user != null)
             {
                 user.UserName = userToUpdate.UserName;
                 user.Email = userToUpdate.Email;
-                user.Password = userToUpdate.Password;
                 user.PhoneNumber = userToUpdate.PhoneNumber;
                 user.Address = userToUpdate.Address;
                 user.City = userToUpdate.City;
@@ -138,5 +122,20 @@ namespace UserService.Services
         {
             await _signInManager.SignOutAsync();
         }
+
+        public async Task<bool> ChangePassword(User user, string currentPassword, string newPassword)
+        {
+            var result = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
+
+            if (result.Succeeded)
+            {
+                return true;
+            }
+            else
+            {
+                throw new Exception("Password change failed: " + result.Errors.First().Description);
+            }
+        }
+
     }
 }

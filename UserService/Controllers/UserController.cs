@@ -1,190 +1,168 @@
 // Controller for user service
 // By Maitham Al-rubaye
 
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Models;
-using UserService.Services;
+using UserService.Repositories;
+using Microsoft.Extensions.Logging;
 
-public class UserController : Controller
+namespace UserService.Controllers
 {
-    private readonly IUserServices _userService;
-    private readonly ILogger<UserController> _logger;
-
-    public UserController(IUserServices userService, ILogger<UserController> logger)
+    [Route("[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
-        _userService = userService;
-        _logger = logger;
-    }
+        private readonly UserRepository _userRepository;
+        private readonly ILogger<UserController> _logger;
 
-    [AllowAnonymous]
-    [HttpGet("Register")]
-    public IActionResult Register()
-    {
-        return View();
-    }
-
-    [AllowAnonymous]
-    [HttpPost("Register")]
-    public async Task<IActionResult> Register(RegisterModel model)
-    {
-        _logger.LogInformation("Register method called");
-        if (ModelState.IsValid)
+        public UserController(UserRepository userRepository, ILogger<UserController> logger)
         {
-            var user = await _userService.RegisterUser(
-                model.Username!,
-                model.FirstName!,
-                model.LastName!,
-                model.Birthdate!,
-                model.Email!,
-                model.Password!,
-                model.PhoneNumber!,
-                model.Address!,
-                model.City!,
-                model.ZipCode!,
-                model.Country!,
-                model.Role!);
-
-            if (user != null)
-            {
-                _logger.LogInformation("Model received: {Model}", model);
-                return Ok(new { Message = "Registration successful.", User = user });
-            }
-
-            _logger.LogInformation("User returned null for email: {Email}", model.Email);
-            return BadRequest(new { Message = "Invalid registration attempt. User returned null for email." });  // return bad request status
+            _userRepository = userRepository;
+            _logger = logger;
         }
 
-        _logger.LogWarning("Model state is invalid. Errors: {ModelStateErrors}", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
-        return BadRequest(new { Message = "Invalid registration attempt. Model state is invalid." });  // return bad request status
-    }
-
-
-    [AllowAnonymous]
-    [HttpGet("Login")]
-    public IActionResult Login()
-    {
-        return View();
-    }
-
-    [HttpPost("Login")]
-    public async Task<IActionResult> Login(LoginModel model)
-    {
-        try
+        // POST: /user/register
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(User user, string password)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _logger.LogInformation("Attempting to log in user with email: {Email}", model.Email);
-                var user = await _userService.LoginUser(model.Email!, model.Password!);
+                _logger.LogInformation("Registering user");
+                var result = await _userRepository.RegisterUser(user, password);
+                _logger.LogInformation("User registered");
+                return Ok(result);
+            }
+            catch
+            {
+                _logger.LogError("Registration failed");
+                return BadRequest("Registration failed.");
+            }
+        }
 
-                if (user != null)
+        // POST: /user/login
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(string email, string password)
+        {
+            try
+            {
+                _logger.LogInformation("Logging in user");
+                var result = await _userRepository.LoginUser(email, password);
+                _logger.LogInformation("User logged in");
+                return Ok(result);
+            }
+            catch
+            {
+                _logger.LogError("Login failed");
+                return BadRequest("Login failed.");
+            }
+        }
+
+        // GET: /user/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetUser(string id)
+        {
+            try
+            {
+                _logger.LogInformation("Getting user");
+                var user = await _userRepository.GetUser(id);
+                if (user == null)
                 {
-                    _logger.LogInformation("Login attempt successful for user with email: {Email}", model.Email);
-                    return RedirectToAction("Index");
+                    _logger.LogError("Failed to get user");
+                    return NotFound("User not found.");
                 }
-                else
+                _logger.LogInformation("User retrieved");
+                return Ok(user);
+            }
+            catch
+            {
+                _logger.LogError("Failed to get user");
+                return BadRequest("Failed to get user.");
+            }
+        }
+
+        // GET: /user
+        [HttpGet]
+        public async Task<IActionResult> GetUsers()
+        {
+            try
+            {
+                _logger.LogInformation("Getting users");
+                var users = await _userRepository.GetUsers();
+                _logger.LogInformation("Users retrieved");
+                return Ok(users);
+            }
+            catch
+            {
+                _logger.LogError("Failed to get users");
+                return BadRequest("Failed to get users.");
+            }
+        }
+
+        // PUT: /user
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(string id, User user)
+        {
+            if (id != user.Id)
+            {
+                return BadRequest();
+            }
+
+            try
+            {
+                _logger.LogInformation("Updating user");
+                var updatedUser = await _userRepository.UpdateUser(user);
+                _logger.LogInformation("User updated");
+                return Ok(updatedUser);
+            }
+            catch
+            {
+                _logger.LogError("Failed to update user");
+                return BadRequest("Failed to update user.");
+            }
+        }
+
+        // DELETE: /user/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            try
+            {
+                _logger.LogInformation("Deleting user");
+                var deletedUser = await _userRepository.DeleteUser(id);
+
+                if (deletedUser == null)
                 {
-                    _logger.LogInformation("User returned null for email: {Email}", model.Email);
+                    _logger.LogError("Failed to delete user");
+                    return NotFound("User not found.");
                 }
+                _logger.LogInformation("User deleted");
+                return Ok(deletedUser);
             }
-            else
+            catch
             {
-                _logger.LogWarning("Model state is invalid. Errors: {ModelStateErrors}", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
+                _logger.LogError("Failed to delete user");
+                return BadRequest("Failed to delete user.");
             }
         }
-        catch (Exception ex)
+
+        // logout
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
         {
-            _logger.LogError(ex, "Error during login");
-        }
-        _logger.LogInformation("Login attempt failed for user with email: {Email}", model.Email);
-        return View(model);
-    }
-
-    [HttpGet("User")]
-    public async Task<IActionResult> Index()
-    {
-        var users = await _userService.GetUsers();
-        return View(users);
-    }
-
-    [HttpGet("User/Edit/{id}")]
-    public async Task<IActionResult> Edit(string id)
-    {
-        var user = await _userService.GetUser(id);
-        if (user == null)
-        {
-            return NotFound();
-        }
-
-        var updateModel = new UpdateModel
-        {
-            Id = user.Id,
-            UserName = user.UserName,
-            FirstName = user.FirstName,
-            LastName = user.LastName,
-            Birthdate = user.Birthdate,
-            Email = user.Email,
-            Password = user.Password,
-            PhoneNumber = user.PhoneNumber,
-            Address = user.Address,
-            City = user.City,
-            ZipCode = user.ZipCode,
-            Country = user.Country,
-            Role = user.Role
-        };
-
-        return View(updateModel); // make sure you pass UpdateModel not User
-    }
-
-    [HttpPost("User/Edit/{id}")]
-    public async Task<IActionResult> Edit(string id, UpdateModel updateModel)
-    {
-        if (ModelState.IsValid)
-        {
-            var updatedUser = await _userService.UpdateUser(updateModel);
-            if (updatedUser != null)
+            try
             {
-                return RedirectToAction("Index");
+                _logger.LogInformation("Logging out user");
+                await _userRepository.LogoutUser();
+                _logger.LogInformation("User logged out");
+                return Ok();
             }
-
-            ModelState.AddModelError("", "Invalid edit attempt.");
+            catch
+            {
+                _logger.LogError("Failed to logout user");
+                return BadRequest("Failed to logout user.");
+            }
         }
 
-        return View(updateModel); // Pass the updateModel back to the view if the model state is invalid
-    }
-
-    [HttpDelete("User/Delete/{id}")]
-    public async Task<IActionResult> Delete(string id)
-    {
-        var deletedUser = await _userService.DeleteUser(id);
-        if (deletedUser != null)
-        {
-            return View();
-        }
-
-        return NotFound();
-    }
-
-    [HttpGet("User/{id}")]
-    public async Task<IActionResult> GetUser(string id)
-    {
-        var user = await _userService.GetUser(id);
-        if (user == null)
-        {
-            return NotFound();
-        }
-
-        return Json(user);
-    }
-
-    // logout
-    [HttpGet("Logout")]
-    public async Task<IActionResult> Logout()
-    {
-        await _userService.LogoutUser();
-        return RedirectToAction("Index");
     }
 }

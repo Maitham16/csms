@@ -209,11 +209,6 @@ namespace UserService.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("varchar(256)");
 
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("longtext");
 
@@ -244,6 +239,9 @@ namespace UserService.Migrations
                         .HasColumnType("varchar(10)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");

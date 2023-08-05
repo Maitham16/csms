@@ -5,14 +5,14 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UserService.Models;
 
-namespace UserService.Services
+namespace UserService.Repositories
 {
-    public interface IUserServices
+    public interface UserRepository
     {
         Task<List<User>> GetUsers();
         Task<User?> GetUser(string id);
-        Task<User> RegisterUser(string Username, string FirstName, string LastName, DateTime Birthdate, string Email, string Password, string PhoneNumber, string Address, string City, string ZipCode, string Country, string Role);
-        Task<User> UpdateUser(UpdateModel user);
+        Task<User> RegisterUser(User user, string password);
+        Task<User> UpdateUser(User user);
         Task<User?> DeleteUser(string id);
         Task<User?> GetUserByEmail(string? email);
         Task<User?> LoginUser(string Email, string Password);

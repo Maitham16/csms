@@ -11,7 +11,6 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
           "Microsoft.IdentityModel.Tokens": "6.32.1",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",

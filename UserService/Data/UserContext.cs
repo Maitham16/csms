@@ -13,5 +13,13 @@ namespace UserService.Data
             : base(options)
         {
         }
+        // email unique
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+        }
     }
 }

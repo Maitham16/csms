@@ -24,10 +24,6 @@ namespace UserService.Models
         [StringLength(50, ErrorMessage = "Address must be between 2 and 50 characters", MinimumLength = 2)]
         public string? Address { get; set; }
 
-        [Required(ErrorMessage = "Password is required")]
-        [StringLength(20, ErrorMessage = "Password must be between 2 and 20 characters", MinimumLength = 2)]
-        public string? Password { get; set; }
-
         [Required(ErrorMessage = "City is required")]
         [StringLength(20, ErrorMessage = "City must be between 2 and 20 characters", MinimumLength = 2)]
         public string? City { get; set; }

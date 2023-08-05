@@ -47,8 +47,6 @@ namespace UserService.Migrations
                     Birthdate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     Address = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Password = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
                     City = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ZipCode = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false)
@@ -243,6 +241,12 @@ namespace UserService.Migrations
                 name: "EmailIndex",
                 table: "AspNetUsers",
                 column: "NormalizedEmail");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_Email",
+                table: "AspNetUsers",
+                column: "Email",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
