@@ -1,12 +1,15 @@
 - the microservice layout is:
-Model - Repository - Data - Controller - View
+Model - Repository - Data - Controller - Service
 
 Models:
 - User (contains the user data) (Id, FirstName, LastName, Email, Password, Address, City, Country, ZipCode, PhoneNumber, Role)
 
 Repositories:
 - UserRepository (contains the methods to interact with the database)
-- IUserRepository (contains the interface for the UserRepository)
+
+Services:
+- UserService (contains the methods to interact with the views)
+             (methods: GetAllUsers, GetUserById, Register, Login, Edit, Delete)
 
 Data:
 - UserContext (contains the database context)
@@ -17,10 +20,42 @@ Controllers:
                     Login(get the login view), Login(post the login view), Logout(logout the user), Edit(get the edit view),
                     Edit(post the edit view), Delete(delete the user))
 
-Views:
-- User:
-    -Index (contains the table with all the users)
-    -Register (contains the form to register a new user)
-    -Login (contains the form to login)
-    -Edit (contains the form to edit the user)
-    -Delete (a bottom to delete the user)
+We will use the following technologies:
+- Microsoft.NET.Sdk.Web (to create the web application)
+- Pomelo.EntityFrameworkCore.MySql (to connect to the database)
+- Microsoft.IdentityModel.Tokens (to create the JWT token)
+- Microsoft.EntityFrameworkCore.Design (to create the database context)
+- Microsoft.AspNetCore.OpenApi (to create the swagger documentation)
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore (to create the user identity)
+
+
+## 2. Create Dockerfile
+- create a file named Dockerfile in the root of the project
+- create a file named .dockerignore in the root of the project
+- create a file named docker-compose.yml in the root of the project
+
+use the shell to access to the docker container and run the following commands:
+- docker ps
+- docker exec -it <container_id> /bin/bash
+- rm -rf <project_name>
+- exit
+- docker cp <project_path> <container_id>:/app
+
+-docker pull mcr.microsoft.com/dotnet/sdk:7.0
+-apt-get update
+-apt-get install -y wget apt-transport-https
+-wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
+
+-apt-get update
+-apt-get install -y dotnet-sdk-7.0
+
+-dotnet tool install --global dotnet-ef
+
+-cd /app/project_name
+
+-/root/.dotnet/tools/dotnet-ef migrations add InitialCreate
+-/root/.dotnet/tools/dotnet-ef database update
+
+
+

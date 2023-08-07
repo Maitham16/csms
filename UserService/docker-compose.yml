@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=db;Port=3306;Database=UserDB;User=root;Password=5334;"
+
+  db:
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 5334
+      MYSQL_DATABASE: userDB
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:

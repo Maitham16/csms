@@ -10,6 +10,11 @@ using Microsoft.EntityFrameworkCore;
 using UserService.Data;
 using UserService.Models;
 using UserService.Repositories;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Extensions.Configuration;
 
 namespace UserService.Services
 {
@@ -17,11 +22,15 @@ namespace UserService.Services
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger<UserServices> _logger;
 
-        public UserServices(UserManager<User> userManager, SignInManager<User> signInManager)
+        public UserServices(UserManager<User> userManager, SignInManager<User> signInManager, IConfiguration configuration, ILogger<UserServices> logger)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _configuration = configuration;
+            _logger = logger;
         }
 
         public async Task<User> RegisterUser(User user, string password)
@@ -39,7 +48,7 @@ namespace UserService.Services
             }
         }
 
-        public async Task<User?> LoginUser(string Email, string Password)
+        public async Task<(User?, string)> LoginUser(string Email, string Password)
         {
             var user = await _userManager.FindByEmailAsync(Email);
             if (user != null)
@@ -47,10 +56,12 @@ namespace UserService.Services
                 var result = await _signInManager.CheckPasswordSignInAsync(user, Password, false);
                 if (result.Succeeded)
                 {
-                    return user;
+                    var token = await GenerateJwtToken(user);
+                    _logger.LogInformation("token" + token);
+                    return (user, token);
                 }
             }
-            return null;
+            return (null, " ");
         }
 
         public async Task<User?> GetUser(string id)
@@ -135,6 +146,34 @@ namespace UserService.Services
             {
                 throw new Exception("Password change failed: " + result.Errors.First().Description);
             }
+        }
+
+        private Task<string> GenerateJwtToken(User? user)
+        {
+            if (user == null || user.UserName == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+
+            var claims = new List<Claim>
+    {
+        new Claim(JwtRegisteredClaimNames.Sub, user.UserName!),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+    };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("12345")); // replace with your secret key
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expires = DateTime.Now.AddDays(Convert.ToDouble("1")); // token expiration
+
+            var token = new JwtSecurityToken(
+                "your_token_issuer",
+                "your_token_audience",
+                claims,
+                expires: expires,
+                signingCredentials: creds
+            );
+
+            return Task.FromResult(new JwtSecurityTokenHandler().WriteToken(token));
         }
 
     }

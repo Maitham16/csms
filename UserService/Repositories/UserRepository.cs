@@ -15,7 +15,7 @@ namespace UserService.Repositories
         Task<User> UpdateUser(User user);
         Task<User?> DeleteUser(string id);
         Task<User?> GetUserByEmail(string? email);
-        Task<User?> LoginUser(string Email, string Password);
+        Task<(User?, string)> LoginUser(string Email, string Password);
         Task LogoutUser();
     }
 }
