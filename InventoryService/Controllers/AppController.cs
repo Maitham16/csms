@@ -16,7 +16,7 @@ namespace InventoryService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
+    // [Authorize]
     public class AppController : ControllerBase
     {
         private readonly IAppRepository _appRepository;
