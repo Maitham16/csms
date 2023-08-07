@@ -41,3 +41,10 @@
 /home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Mono.TextTemplating.dll
 /home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/System.CodeDom.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/maith/Desktop/CSharpMS/InventoryService/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

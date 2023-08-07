@@ -12,6 +12,10 @@ using Microsoft.Extensions.Hosting;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +34,21 @@ builder.Services.AddLogging(logging =>
     logging.AddDebug();
 });
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+
+        ValidIssuer = "YOUR_ISSUER_HERE", // Must match the issuer in your token
+        ValidAudience = "YOUR_AUDIENCE_HERE", // Must match the audience in your token
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("thisIsAStrong32CharactersSecret!"))
+    };
+});
 
 
 builder.Services.AddControllers();
@@ -51,6 +70,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

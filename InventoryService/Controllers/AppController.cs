@@ -28,6 +28,7 @@ namespace InventoryService.Controllers
         // Product methods
         [HttpGet]
         [Route("product")]
+        [Authorize]
         public async Task<IActionResult> GetProducts()
         {
             try
