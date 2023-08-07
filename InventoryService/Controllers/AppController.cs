@@ -16,6 +16,7 @@ namespace InventoryService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class AppController : ControllerBase
     {
         private readonly IAppRepository _appRepository;
@@ -28,7 +29,6 @@ namespace InventoryService.Controllers
         // Product methods
         [HttpGet]
         [Route("product")]
-        [Authorize]
         public async Task<IActionResult> GetProducts()
         {
             try
