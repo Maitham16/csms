@@ -42,20 +42,16 @@ namespace UserService.Controllers
 
         // POST: /user/login
         [HttpPost("login")]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login([FromQuery] string email, [FromQuery] string password)
         {
-            try
+            var token = await _userRepository.LoginUser(email, password);
+            if (token != null)
             {
-                _logger.LogInformation("Logging in user");
-                var result = await _userRepository.LoginUser(email, password);
-                _logger.LogInformation("User logged in");
-                return Ok(result);
+                _logger.LogInformation("token: " + token);
+                return Ok(new { Token = token });
             }
-            catch
-            {
-                _logger.LogError("Login failed");
-                return BadRequest("Login failed.");
-            }
+            _logger.LogInformation("Unauthorized login attempt.");
+            return Unauthorized();
         }
 
         // GET: /user/{id}

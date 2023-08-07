@@ -44,24 +44,29 @@ namespace UserService.Services
             }
             else
             {
-                throw new Exception("User creation failed: " + result.Errors.First().Description);
+                throw new InvalidOperationException("User creation failed: " + result.Errors.First().Description);
             }
         }
 
-        public async Task<(User?, string)> LoginUser(string Email, string Password)
+        public async Task<string?> LoginUser(string Email, string Password)
         {
             var user = await _userManager.FindByEmailAsync(Email);
-            if (user != null)
+            if (user == null)
             {
-                var result = await _signInManager.CheckPasswordSignInAsync(user, Password, false);
-                if (result.Succeeded)
-                {
-                    var token = await GenerateJwtToken(user);
-                    _logger.LogInformation("token" + token);
-                    return (user, token);
-                }
+                _logger.LogInformation("User with email {Email} not found.", Email);
+                return null;
             }
-            return (null, " ");
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, Password, false);
+            if (!result.Succeeded)
+            {
+                _logger.LogInformation("Password check failed for user {Email}. Error: {Error}", Email, result.ToString());
+                return null;
+            }
+
+            var token = await GenerateJwtToken(user);
+            _logger.LogInformation("Token generated for user {Email}: {Token}", Email, token);
+            return token;
         }
 
         public async Task<User?> GetUser(string id)
@@ -161,13 +166,13 @@ namespace UserService.Services
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
     };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("12345")); // replace with your secret key
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]!)); // Get from configuration
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var expires = DateTime.Now.AddDays(Convert.ToDouble("1")); // token expiration
+            var expires = DateTime.Now.AddDays(Convert.ToDouble(_configuration["JWT:ExpirationDays"] ?? "1"));
 
             var token = new JwtSecurityToken(
-                "your_token_issuer",
-                "your_token_audience",
+                _configuration["JWT:Issuer"],
+                _configuration["JWT:Audience"],
                 claims,
                 expires: expires,
                 signingCredentials: creds
@@ -175,6 +180,7 @@ namespace UserService.Services
 
             return Task.FromResult(new JwtSecurityTokenHandler().WriteToken(token));
         }
+
 
     }
 }
