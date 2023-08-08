@@ -15,7 +15,7 @@ namespace CatalogService.Services
     public class InventoryServiceClient
     {
         private readonly HttpClient _httpClient;
-        private const string InventoryServiceBaseUrl = "http://localhost:5001";
+        private const string InventoryServiceBaseUrl = "http://inventory:80";
         private readonly JsonSerializerOptions _jsonOptions = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
