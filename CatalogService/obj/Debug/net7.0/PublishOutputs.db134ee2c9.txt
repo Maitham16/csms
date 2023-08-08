@@ -1,0 +1,12 @@
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/CatalogService
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/appsettings.Development.json
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/appsettings.json
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/CatalogService.dll
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/CatalogService.runtimeconfig.json
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/CatalogService.pdb
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/Microsoft.OpenApi.dll
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/maith/Desktop/CSharpMS/CatalogService/obj/Debug/net7.0/publish/CatalogService.deps.json

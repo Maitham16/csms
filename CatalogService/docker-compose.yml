@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  catalog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5002:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      - app_data:/app/data
+
+  inventory:
+    image: inventory:latest   # Replace with the name and tag of your existing image.
+    ports:
+      - "5001:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development 
+
+volumes:
+  app_data:

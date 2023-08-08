@@ -33,7 +33,8 @@ namespace CatalogService.Services
             var content = await response.Content.ReadAsStringAsync();
             try
             {
-                return JsonSerializer.Deserialize<IEnumerable<CatalogProductDTO>>(content, _jsonOptions);
+                return JsonSerializer.Deserialize<IEnumerable<CatalogProductDTO>>(content, _jsonOptions)
+                    ?? throw new Exception("Deserialized data is null.");
             }
             catch (JsonException ex)
             {
@@ -48,7 +49,8 @@ namespace CatalogService.Services
             var content = await response.Content.ReadAsStringAsync();
             try
             {
-                return JsonSerializer.Deserialize<IEnumerable<CatalogCategoryDTO>>(content, _jsonOptions);
+                return JsonSerializer.Deserialize<IEnumerable<CatalogCategoryDTO>>(content, _jsonOptions)
+                    ?? throw new Exception("Deserialized data is null.");
             }
             catch (JsonException ex)
             {
@@ -63,7 +65,8 @@ namespace CatalogService.Services
             var content = await response.Content.ReadAsStringAsync();
             try
             {
-                return JsonSerializer.Deserialize<CatalogProductDTO>(content, _jsonOptions);
+                return JsonSerializer.Deserialize<CatalogProductDTO>(content, _jsonOptions)
+                    ?? throw new Exception("Deserialized data is null.");
             }
             catch (JsonException ex)
             {
