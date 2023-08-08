@@ -1,5 +1,10 @@
 version: '3.8'
 
+networks:
+  default:
+    external:
+      name: eShopNetwork
+
 services:
   catalog:
     build:
@@ -11,13 +16,6 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
     volumes:
       - app_data:/app/data
-
-  inventory:
-    image: inventory:latest   # Replace with the name and tag of your existing image.
-    ports:
-      - "5001:80"
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development 
 
 volumes:
   app_data:
