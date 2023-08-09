@@ -43,6 +43,13 @@ public class OrderController : ControllerBase
         return CreatedAtAction(nameof(GetOrder), new { id = order.Id }, order);
     }
 
+    // Place orders from cart for a user
+    [HttpPost("placeFromCart/{userId}")]
+    public async Task<ActionResult<IEnumerable<Order>>> PlaceOrder(string userId)
+    {
+        return Ok(await _orderRepository.PlaceOrder(userId));
+    }
+
     [HttpPut("{id}")]
     public async Task<ActionResult<Order>> UpdateOrder(int id, Order order)
     {
@@ -64,6 +71,38 @@ public class OrderController : ControllerBase
     public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByUserId(string userId)
     {
         return Ok(await _orderRepository.GetOrdersByUserId(userId));
+    }
+
+    [HttpPut("cancel/{id}")]
+    public async Task<ActionResult<Order>> CancelOrder(int id)
+    {
+        var order = await _orderRepository.GetOrder(id);
+        if (order == null) return NotFound();
+        return Ok(await _orderRepository.CancelOrder(id));
+    }
+
+    [HttpPut("ship/{id}")]
+    public async Task<ActionResult<Order>> ShipOrder(int id)
+    {
+        var order = await _orderRepository.GetOrder(id);
+        if (order == null) return NotFound();
+        return Ok(await _orderRepository.ShipOrder(id));
+    }
+
+    [HttpPut("deliver/{id}")]
+    public async Task<ActionResult<Order>> DeliverOrder(int id)
+    {
+        var order = await _orderRepository.GetOrder(id);
+        if (order == null) return NotFound();
+        return Ok(await _orderRepository.DeliverOrder(id));
+    }
+
+    [HttpPut("return/{id}")]
+    public async Task<ActionResult<Order>> ReturnOrder(int id)
+    {
+        var order = await _orderRepository.GetOrder(id);
+        if (order == null) return NotFound();
+        return Ok(await _orderRepository.ReturnOrder(id));
     }
 }
 

@@ -29,5 +29,16 @@ namespace OrderService.Models
 
         [Required]
         public DateTime OrderDate { get; set; }
+
+        public enum OrderStatus
+        {
+            Placed,
+            Shipped,
+            Delivered,
+            Returned,
+            Cancelled
+        }
+
+        public OrderStatus Status { get; set; }
     }
 }

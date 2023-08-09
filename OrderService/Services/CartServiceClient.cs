@@ -24,20 +24,26 @@ namespace OrderService.Services
             _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<OrderCartDTO>> GetItemsAsync()
+        public async Task<OrderCartDTO> GetUserCartAsync(string userId)
         {
-            var response = await _httpClient.GetAsync($"{CartServiceBaseUrl}/Cart");
+            var response = await _httpClient.GetAsync($"{CartServiceBaseUrl}/Cart/{userId}");
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
             try
             {
-                return JsonSerializer.Deserialize<IEnumerable<OrderCartDTO>>(content, _jsonOptions)
+                return JsonSerializer.Deserialize<OrderCartDTO>(content, _jsonOptions)
                     ?? throw new Exception("Deserialized data is null.");
             }
             catch (JsonException ex)
             {
                 throw new Exception("Error deserializing the products data.", ex);
             }
+        }
+
+        public async Task<bool> EmptyUserCartAsync(string userId)
+        {
+            var response = await _httpClient.DeleteAsync($"{CartServiceBaseUrl}/Cart/{userId}");
+            return response.IsSuccessStatusCode;
         }
     }
 }

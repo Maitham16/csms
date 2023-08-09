@@ -16,5 +16,10 @@ namespace OrderService.Repositories
         Task<Order> UpdateOrder(Order order);
         Task<Order> DeleteOrder(int id);
         Task<IEnumerable<Order>> GetOrdersByUserId(string userId);
+        Task<Order> CancelOrder(int id);
+        Task<Order> ShipOrder(int id);
+        Task<Order> DeliverOrder(int id);
+        Task<Order> ReturnOrder(int id);
+        Task<IEnumerable<Order>> PlaceOrder(string userId);
     }
 }

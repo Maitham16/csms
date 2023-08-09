@@ -13,5 +13,14 @@ namespace OrderService.Data
         }
 
         public DbSet<Order> Orders { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Order>()
+                .Property(o => o.Status)
+                .HasConversion<string>();
+        }
     }
 }
