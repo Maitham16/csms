@@ -1,4 +1,3 @@
-using CatalogService.Client;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Logging;
@@ -15,6 +14,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using OrderService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,7 +48,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     };
 });
 
-builder.Services.AddHttpClient<CatalogServiceClient>(client =>
+builder.Services.AddHttpClient<CartServiceClient>(client =>
 {
     client.BaseAddress = new Uri("https://localhost:5003");
 });

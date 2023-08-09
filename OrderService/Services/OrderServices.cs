@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using OrderService.DTOs;
 using OrderService.Models;
 using OrderService.Repositories;
+using OrderService.Data;
 
 namespace OrderService.Services
 {
@@ -31,7 +32,10 @@ namespace OrderService.Services
         public async Task<Order> DeleteOrder(int id)
         {
             var order = await _context.Orders.FindAsync(id);
-            if (order == null) return null;
+            if (order == null)
+            {
+                throw new Exception("Order not found");
+            }
             _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
             return order;
@@ -39,7 +43,12 @@ namespace OrderService.Services
 
         public async Task<Order> GetOrder(int id)
         {
-            return await _context.Orders.FindAsync(id);
+            var result = await _context.Orders.FindAsync(id);
+            if (result == null)
+            {
+                throw new Exception("Order not found");
+            }
+            return result;
         }
 
         public async Task<IEnumerable<Order>> GetOrders()
