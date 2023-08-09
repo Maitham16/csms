@@ -1,4 +1,4 @@
-// Order Cart DTO
+// cartItemDTO class
 // By Maitham Al-rubaye
 
 using System;
@@ -7,13 +7,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OrderService.DTOs
 {
-    public class OrderCartDTO
+    public class CartItemDTO
     {
         [Key]
         public int Id { get; set; }
-        public string? UserId { get; set; }
-        public List<CartItem>? Items { get; set; }
+        public int ProductId { get; set; }
+        public decimal UnitPrice { get; set; }
+        public int Quantity { get; set; }
         public decimal TotalPrice { get; set; }
-        public decimal DiscountAmount { get; set; }
     }
 }
