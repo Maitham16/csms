@@ -13,7 +13,7 @@ namespace CartService.Services
     public class CatalogServiceClient
     {
         private readonly HttpClient _httpClient;
-        private const string CatalogServiceBaseUrl = "http://localhost:5002";
+        private const string CatalogServiceBaseUrl = "http://catalog:80";
         private readonly JsonSerializerOptions _jsonOptions = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
