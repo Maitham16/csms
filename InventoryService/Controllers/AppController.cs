@@ -253,5 +253,23 @@ namespace InventoryService.Controllers
                 return NotFound(ex.Message);
             }
         }
+
+        // get inventory stock by product id
+        // Task<int> GetStock(int id)
+        [HttpGet]
+        [Route("inventory/stock/{id}")]
+        public async Task<IActionResult> GetStock(int id)
+        {
+            try
+            {
+                var result = await _appRepository.GetStock(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+    
     }
 }

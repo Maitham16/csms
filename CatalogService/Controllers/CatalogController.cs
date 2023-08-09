@@ -97,4 +97,18 @@ public class CatalogController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+
+    // get product stock
+    [HttpGet("inventory/stock/{id}")]
+    public async Task<ActionResult<int>> GetProductStock(int id)
+    {
+        try
+        {
+            return Ok(await _inventoryServiceClient.GetProductStockAsync(id));
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }

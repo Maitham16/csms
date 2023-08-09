@@ -153,5 +153,16 @@ namespace InventoryService.Services
             await _context.SaveChangesAsync();
             return category;
         }
+
+        // get int stock by product id from inventory
+        public async Task<int> GetStock(int id)
+        {
+            var result = await _context.Inventories.FindAsync(id);
+            if (result == null)
+            {
+                throw new Exception("Inventory not found");
+            }
+            return result.Stock;
+        }
     }
 }

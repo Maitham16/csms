@@ -1,4 +1,4 @@
-// Cart model class
+// Disscount model
 // By Maitham Al-rubaye
 
 using System;
@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 
 namespace CartService.Models
 {
-    public class Cart
+    public class Discount
     {
         [Key]
         public int Id { get; set; }
-        public string? UserId { get; set; }
-        public List<CartItem>? Items { get; set; }
-        public decimal TotalPrice { get; set; }
+        public string? Code { get; set; }
+        public decimal Percentage { get; set; }
         public DateTime ExpiryDateTime { get; set; }
-        public decimal DiscountAmount { get; set; }
+        public bool IsUsed { get; set; }
     }
 }

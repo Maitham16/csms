@@ -29,5 +29,7 @@ namespace InventoryService.Repositories
         Task<Category> AddCategory(Category category);
         Task<Category> UpdateCategory(Category category);
         Task<Category> DeleteCategory(int id);  
+
+        Task<int> GetStock(int id);
     }
 }

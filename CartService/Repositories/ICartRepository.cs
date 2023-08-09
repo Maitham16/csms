@@ -18,16 +18,27 @@ namespace CartService.Repositories
         Task<Cart> CreateCartAsync(Cart cart);
         Task<bool> UpdateCartAsync(Cart cart);
         Task<bool> DeleteCartAsync(int cartId);
-        // return all carts
         Task<IEnumerable<Cart>> GetCartsAsync();
 
         // Operations for Cart Items
         Task<IEnumerable<CartItem>> GetItemsInCartAsync(int cartId);
         Task<bool> AddItemToCartAsync(int cartId, CartItem item);
-        Task<bool> RemoveItemFromCartAsync(int cartId, int itemId); 
+        Task<bool> RemoveItemFromCartAsync(int cartId, int itemId);
         Task<bool> UpdateItemInCartAsync(int cartId, CartItem item);
         Task<CartItem> GetCartItemByIdAsync(int itemId);
         Task<decimal> CalculateCartTotalAsync(int cartId);
-        Task<bool> CheckItemAvailabilityAsync(int itemId);
+
+        // Inventory related method
+        Task<bool> IsProductAvailableInInventoryAsync(int productId);
+
+        // Discount application method
+        Task ApplyDiscountToCartAsync(int cartId, string discountCode);
+
+        // Cart expiration methods
+        bool IsCartExpired(Cart cart);
+        Task HandleExpiredCartsAsync();
+
+        // Checkout method
+        Task<bool> CheckoutAsync(int cartId);
     }
 }

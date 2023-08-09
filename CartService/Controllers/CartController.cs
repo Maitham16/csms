@@ -107,11 +107,51 @@ namespace CartService.Controllers
             return Ok(total);
         }
 
-        [HttpGet("{cartId}/items/{itemId}/availability")]
-        public async Task<ActionResult<bool>> CheckItemAvailabilityAsync(int itemId)
+        [HttpGet("products/{productId}/availability")]
+        public async Task<ActionResult<bool>> CheckProductAvailabilityInInventoryAsync(int productId)
         {
-            var available = await _cartRepository.CheckItemAvailabilityAsync(itemId);
+            var available = await _cartRepository.IsProductAvailableInInventoryAsync(productId);
             return Ok(available);
+        }
+
+        [HttpGet("{cartId}/expired")]
+        public async Task<ActionResult<bool>> IsCartExpired(int cartId)
+        {
+            var cart = await _cartRepository.GetCartAsync(cartId);
+            if (cart == null)
+            {
+                return NotFound();
+            }
+            var isExpired = _cartRepository.IsCartExpired(cart);
+            return Ok(isExpired);
+        }
+
+        [HttpPost("{cartId}/applyDiscount")]
+        public async Task<ActionResult> ApplyDiscountToCart(int cartId, [FromBody] string discountCode)
+        {
+            try
+            {
+                await _cartRepository.ApplyDiscountToCartAsync(cartId, discountCode);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpPost("{cartId}/checkout")]
+        public async Task<ActionResult<bool>> Checkout(int cartId)
+        {
+            try
+            {
+                var result = await _cartRepository.CheckoutAsync(cartId);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
     }
 }

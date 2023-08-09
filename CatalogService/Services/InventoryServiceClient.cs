@@ -138,5 +138,21 @@ namespace CatalogService.Services
                 return products; // Default or handle other sort criteria
             }
         }
+
+        // get inventory srock for a product
+        public async Task<int> GetProductStockAsync(int productId)
+        {
+            var response = await _httpClient.GetAsync($"{InventoryServiceBaseUrl}/app/inventory/stock/{productId}");
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            try
+            {
+                return JsonSerializer.Deserialize<int>(content, _jsonOptions);
+            }
+            catch (JsonException ex)
+            {
+                throw new Exception("Error deserializing the stock data.", ex);
+            }
+        }
     }
 }
