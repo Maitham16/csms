@@ -2,7 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // this code is for eShop project Tutorial
             // by Maitham Al-rubaye
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
