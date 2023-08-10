@@ -20,6 +20,7 @@ namespace OrderService.Repositories
         Task<Order> ShipOrder(int id);
         Task<Order> DeliverOrder(int id);
         Task<Order> ReturnOrder(int id);
-        Task<IEnumerable<Order>> PlaceOrder(string userId);
+        Task<IEnumerable<Order>> PlaceOrderFromCart(string cartId);
+
     }
 }

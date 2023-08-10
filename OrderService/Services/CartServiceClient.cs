@@ -45,5 +45,27 @@ namespace OrderService.Services
             var response = await _httpClient.DeleteAsync($"{CartServiceBaseUrl}/Cart/{userId}");
             return response.IsSuccessStatusCode;
         }
+
+        public async Task<OrderCartDTO> GetCartByIdAsync(string cartId)
+        {
+            var response = await _httpClient.GetAsync($"{CartServiceBaseUrl}/Cart/{cartId}");
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            try
+            {
+                return JsonSerializer.Deserialize<OrderCartDTO>(content, _jsonOptions)
+                    ?? throw new Exception("Deserialized data is null.");
+            }
+            catch (JsonException ex)
+            {
+                throw new Exception("Error deserializing the cart data.", ex);
+            }
+        }
+
+        public async Task<bool> EmptyCartAsync(string cartId)
+        {
+            var response = await _httpClient.DeleteAsync($"{CartServiceBaseUrl}/Cart/{cartId}");
+            return response.IsSuccessStatusCode;
+        }
     }
 }

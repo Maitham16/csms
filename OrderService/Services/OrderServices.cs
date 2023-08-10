@@ -24,9 +24,9 @@ namespace OrderService.Services
             _cartServiceClient = cartServiceClient;
         }
 
-        public async Task<IEnumerable<Order>> PlaceOrder(string userId)
+        public async Task<IEnumerable<Order>> PlaceOrderFromCart(string cartId)
         {
-            var cart = await _cartServiceClient.GetUserCartAsync(userId);
+            var cart = await _cartServiceClient.GetCartByIdAsync(cartId);
 
             if (cart == null || cart.Items == null || !cart.Items.Any())
             {
@@ -38,7 +38,7 @@ namespace OrderService.Services
             {
                 var order = new Order
                 {
-                    UserId = userId,
+                    UserId = cart.UserId, // assuming the cart DTO contains a UserId
                     ProductId = cartItem.ProductId,
                     UnitPrice = (double)cartItem.UnitPrice,
                     Quantity = cartItem.Quantity,
@@ -52,7 +52,7 @@ namespace OrderService.Services
             await _context.SaveChangesAsync();
 
             // Optionally, after placing the orders, empty the user's cart
-            await _cartServiceClient.EmptyUserCartAsync(userId);
+            await _cartServiceClient.EmptyCartAsync(cartId);
 
             return orders;
         }

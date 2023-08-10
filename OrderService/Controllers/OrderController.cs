@@ -36,18 +36,17 @@ public class OrderController : ControllerBase
         return Ok(order);
     }
 
+    [HttpPost("placeFromCart/{cartId}")]
+    public async Task<ActionResult<IEnumerable<Order>>> PlaceOrderFromCart(string cartId)
+    {
+        return Ok(await _orderRepository.PlaceOrderFromCart(cartId));
+    }
+
     [HttpPost]
     public async Task<ActionResult<Order>> AddOrder(Order order)
     {
         await _orderRepository.AddOrder(order);
         return CreatedAtAction(nameof(GetOrder), new { id = order.Id }, order);
-    }
-
-    // Place orders from cart for a user
-    [HttpPost("placeFromCart/{userId}")]
-    public async Task<ActionResult<IEnumerable<Order>>> PlaceOrder(string userId)
-    {
-        return Ok(await _orderRepository.PlaceOrder(userId));
     }
 
     [HttpPut("{id}")]
