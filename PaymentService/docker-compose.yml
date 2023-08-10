@@ -1,0 +1,33 @@
+version: '3.4'
+
+networks:
+  default:
+    external:
+      name: eShopNetwork
+      
+services:
+  payment:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5005:80"
+    depends_on:
+      - postgres
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=postgres;Port=5432;Database=paymentDB;Username=postgres;Password=4335;"
+
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5437:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 4335
+      POSTGRES_DB: paymentDB
+    volumes:
+      - dbdata:/var/lib/postgresql/data/
+
+volumes:
+  dbdata:
