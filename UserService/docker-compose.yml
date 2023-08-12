@@ -16,7 +16,7 @@ services:
       - db
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: "Server=db;Port=3306;Database=UserDB;User=root;Password=5334;"
+      ConnectionStrings__DefaultConnection: "Server=db;Port=3306;Database=userDB;User=root;Password=5334;"
 
   db:
     image: mysql:latest
