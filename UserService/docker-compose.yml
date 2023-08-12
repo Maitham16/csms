@@ -1,7 +1,12 @@
 version: '3.4'
 
+networks:
+  default:
+    external:
+      name: eShopNetwork
+
 services:
-  webapp:
+  user:
     build:
       context: .
       dockerfile: Dockerfile
