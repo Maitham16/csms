@@ -1,12 +1,6 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Threading.Tasks;
 using UserService.Models;
 using UserService.Repositories;
 using UserService.Services;
@@ -14,9 +8,7 @@ using UserService.Data;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using Polly;
+using UserService.RabbitMQ;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +17,7 @@ builder.Services.AddScoped<UserRepository, UserServices>();
 
 builder.Services.AddDbContext<UserContext>(options =>
    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 25))));
-   
+
 builder.Services.AddIdentity<User, IdentityRole>(options =>
     {
         options.Password.RequireDigit = false;
@@ -43,6 +35,13 @@ builder.Services.AddLogging(logging =>
     logging.AddConsole();
     logging.AddDebug();
 });
+
+builder.Services.AddSingleton<MessageQueueService>(sp => 
+    new MessageQueueService(
+        builder.Configuration["RabbitMQ:Hostname"]!,
+        builder.Configuration["RabbitMQ:QueueName"]!
+    )
+);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

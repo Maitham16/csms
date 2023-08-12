@@ -14,9 +14,12 @@ services:
       - "5000:80"
     depends_on:
       - db
+      - rabbitmq
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__DefaultConnection: "Server=db;Port=3306;Database=userDB;User=root;Password=5334;"
+      RabbitMQ__Host: "rabbitmq"
+      RabbitMQ__Port: "5672"
 
   db:
     image: mysql:latest
@@ -27,6 +30,15 @@ services:
       MYSQL_DATABASE: userDB
     volumes:
       - dbdata:/var/lib/mysql
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15673:15672"
+      - "5673:5672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
 
 volumes:
   dbdata:

@@ -83,6 +83,7 @@
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/MySqlConnector.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Polly.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/RabbitMQ.Client.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/maith/Desktop/CSharpMS/UserService/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll

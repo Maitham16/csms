@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ufN5xxzeK5lmPKNCuIL62CVfN0cauzJososk4NSUVVRbQ0uD50vd6+WaZlBj/yCbrPYLBtwKfXf56yLhmI1ttg==",
+  "dgSpecHash": "zy/XbJppSkP4xAVU9KdXUjSIchoJWwL4escq6cuhpHT25SY5g3ZVghYtDLOC0hhL/rdUgoqCQDHLmp/svp5CQA==",
   "success": true,
   "projectFilePath": "/home/maith/Desktop/CSharpMS/UserService/UserService.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,7 @@
     "/home/maith/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
     "/home/maith/.nuget/packages/polly/7.2.4/polly.7.2.4.nupkg.sha512",
     "/home/maith/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
+    "/home/maith/.nuget/packages/rabbitmq.client/6.5.0/rabbitmq.client.6.5.0.nupkg.sha512",
     "/home/maith/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/home/maith/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/maith/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
@@ -69,6 +70,7 @@
     "/home/maith/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/home/maith/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/home/maith/.nuget/packages/system.identitymodel.tokens.jwt/6.32.1/system.identitymodel.tokens.jwt.6.32.1.nupkg.sha512",
+    "/home/maith/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
     "/home/maith/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
     "/home/maith/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",
     "/home/maith/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
@@ -78,7 +80,8 @@
     "/home/maith/.nuget/packages/system.security.principal.windows/4.5.0/system.security.principal.windows.4.5.0.nupkg.sha512",
     "/home/maith/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/home/maith/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/home/maith/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+    "/home/maith/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
+    "/home/maith/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

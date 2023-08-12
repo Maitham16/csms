@@ -1,11 +1,10 @@
 // Controller for user service
 // By Maitham Al-rubaye
 
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Models;
 using UserService.Repositories;
-using Microsoft.Extensions.Logging;
+using UserService.RabbitMQ;
 
 namespace UserService.Controllers
 {
@@ -15,11 +14,13 @@ namespace UserService.Controllers
     {
         private readonly UserRepository _userRepository;
         private readonly ILogger<UserController> _logger;
+        private readonly MessageQueueService _messageQueueService;
 
-        public UserController(UserRepository userRepository, ILogger<UserController> logger)
+        public UserController(UserRepository userRepository, ILogger<UserController> logger, MessageQueueService messageQueueService)
         {
             _userRepository = userRepository;
             _logger = logger;
+            _messageQueueService = messageQueueService;
         }
 
         // POST: /user/register
@@ -31,11 +32,13 @@ namespace UserService.Controllers
                 _logger.LogInformation("Registering user");
                 var result = await _userRepository.RegisterUser(user, password);
                 _logger.LogInformation("User registered");
+                // send message to rabbitmq
+                _messageQueueService.SendMessage(new { Type = "UserRegistered", UserId = result.Id });
                 return Ok(result);
             }
-            catch
+            catch (Exception ex)
             {
-                _logger.LogError("Registration failed");
+                _logger.LogError($"Registration failed: {ex.Message}\n{ex.StackTrace}");
                 return BadRequest("Registration failed.");
             }
         }
